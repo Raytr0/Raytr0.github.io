@@ -766,10 +766,6 @@ body {
   color: var(--text-secondary);
 }
 
-.edu-body {
-  padding-top: 1.5rem;
-}
-
 .edu-degree {
   color: var(--text-primary);
   font-size: 1.05rem;

@@ -602,7 +602,8 @@
             <p class="edu-location">Ontario, Canada</p>
           </div>
           <div class="edu-body">
-            <p class="edu-degree"><strong>Degree:</strong> Fourth Year Software Engineering</p>
+            <p class="edu-degree"><strong>Degree:</strong> Bachelor's in Software Engineering</p>
+            <p class="edu-awards"><strong>Awards:</strong> Dean's Honor List</p>
             <div class="edu-coursework">
               <p><strong>Relevant Coursework:</strong></p>
               <ul>
@@ -813,6 +814,27 @@
       position: absolute;
       left: 0;
       color: #6366f1;
+    }
+
+    /* Reduce vertical spacing in the Education card to remove extra blank rows */
+    .education-card .edu-header h3 {
+      margin: 0 0 4px 0;
+    }
+    .education-card .edu-location {
+      margin: 0 0 6px 0;
+      font-size: 0.95rem;
+      color: #6b7280;
+    }
+    .education-card .edu-body p,
+    .education-card .edu-body .edu-awards {
+      margin: 4px 0;
+    }
+    .education-card .edu-coursework p {
+      margin: 6px 0 4px;
+    }
+    .education-card .edu-coursework ul {
+      margin: 6px 0 0 20px;
+      padding: 0;
     }
   </style>
 </body>
