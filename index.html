@@ -96,10 +96,10 @@
     </div>
   </nav>
 
-  <!-- Main Content-->
-  <main>
-    <!-- Hero Section -->
-    <section id="intro" class="hero">
+   <!-- Main Content-->
+   <main>
+     <!-- Hero Section -->
+     <section id="intro" class="hero">
       <div class="hero-content">
         <div class="hero-text">
           <h1 class="hero-title">
@@ -138,20 +138,20 @@
         <h2 class="section-title">About Me</h2>
         <div class="section-content">
           <div class="about-grid">
-            <div class="about-text">
-              <p>
-                I am a Fourth Year Software Engineering Student at Western University. I enjoy coding, cybersecurity, and video game development. I strive to bring 100% to the work I do.
-              </p>
-              <p>
-                I have worked on projects involving Python, MySQL, HTML5, CSS, Java, Unity and many more. With 3 internships worth of professional experience, I've strengthened my expertise in Java, Javascript, MySQL, and React.js.
-              </p>
-              <p>
-                I'm passionate about creating solutions that can benefit and entertain millions of users worldwide.
-              </p>
-              <p>
-                Looking for an opportunity to work in a challenging position utilizing my software engineering skills.
-              </p>
-            </div>
+              <div class="about-text">
+                <p>
+                  I am a Fourth Year Software Engineering Student at Western University. I enjoy coding, cybersecurity, and video game development. I strive to bring 100% to the work I do.
+                </p>
+                <p>
+                  I have worked on projects involving Python, MySQL, HTML5, CSS, Java, Unity and many more. With 3 internships worth of professional experience, I've strengthened my expertise in Java, JavaScript, MySQL, and React.js.
+                </p>
+                <p>
+                  Recently I've been working more with computer vision and mobile/web stacks — building detection and marker-based systems using YOLO and ArUCO, developing cross-platform interfaces with React and React Native, and deploying containerized applications using Docker and Kubernetes.
+                </p>
+                <p>
+                  I'm passionate about creating solutions that can benefit and entertain millions of users worldwide and am looking for opportunities to apply my software engineering and computer vision skills in challenging roles.
+                </p>
+              </div>
             <div class="about-skills">
               <div class="skill-group">
                 <h4>Languages</h4>
@@ -161,18 +161,18 @@
                 <h4>Databases</h4>
                 <p>MySQL, Firebase</p>
               </div>
-              <div class="skill-group">
-                <h4>Libraries</h4>
-                <p>React.js, PyGame</p>
-              </div>
-              <div class="skill-group">
-                <h4>Frameworks</h4>
-                <p>Node.js, Spring, Bootstrap</p>
-              </div>
-              <div class="skill-group">
-                <h4>Tools & Technologies</h4>
-                <p>Linux, Git, Docker, AWS, AWS AI, Unity, Jira, Scrum, Oracle VM</p>
-              </div>
+               <div class="skill-group">
+                 <h4>Libraries</h4>
+                 <p>React.js, PyGame, YOLO, ArUCO</p>
+               </div>
+               <div class="skill-group">
+                 <h4>Frameworks</h4>
+                 <p>Node.js, Spring, Bootstrap, React Native</p>
+               </div>
+               <div class="skill-group">
+                 <h4>Tools & Technologies</h4>
+                 <p>Linux, Git, Docker, Kubernetes, AWS, AWS AI, Unity, Jira, Scrum, Oracle VM</p>
+               </div>
             </div>
           </div>
         </div>
@@ -282,37 +282,120 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section">
-      <div class="container">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-grid">
+     <section id="projects" class="section">
+       <div class="container">
+         <h2 class="section-title">Featured Projects</h2>
+         <div class="projects-grid">
 
-          <div class="project-card">
-            <div class="project-image">
-              <img src="/assets/img/project-quizup-logo-1.png" alt="Web Scraper Project">
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">Web Scraper</h3>
-              <p class="project-desc">Amazon data collection tool</p>
-              <ul class="project-achievements">
-                <li>Collected product data including names, prices, ratings, brands, and specifications</li>
-                <li>Created flexible filters for users to search items matching their criteria</li>
-                <li>Automated data export and formatting to Excel files</li>
-              </ul>
-              <div class="project-tech">
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">Excel</span>
-                <span class="tech-tag">AWS AI</span>
+           <div class="project-card">
+             <div class="project-image">
+               <img src="/assets/img/github.png" alt="Accessibility AI">
+             </div>
+             <div class="project-content">
+               <h3 class="project-title">Crepancy</h3>
+               <p class="project-desc">Accessibility AI (Capstone Project) — Computer Vision for AODA Compliance Auditing</p>
+                <ul class="project-achievements">
+                  <li><strong>Award:</strong> Placed First at Rehabilitation Engineering and Assistive Technology Society of North America's 2026 Student Scientific Paper Competition; accepted for Poster presentation at the 48th Annual International Conference of the IEEE Engineering in Medicine and Biology Society</li>
+                </ul>
+                <button class="toggle-achievements" onclick="toggleAchievements(this)">
+                  <i class="fa fa-chevron-down"></i> Show More
+                </button>
+                <ul class="project-achievements collapsible-achievements collapsed">
+                 <li>Engineering a computer vision pipeline using YOLO and ArUco markers to detect washroom fixtures and gauge precise dimensions, automatically identifying spacing and height violations against AODA standards</li>
+                 <li>Designing the tool to democratize accessibility auditing, enabling non-engineers to identify liability risks through an automated "stoplight" (Pass/Fail) validation system</li>
+               </ul>
+               <div class="project-tech">
+                 <span class="tech-tag">Python</span>
+                 <span class="tech-tag">Computer Vision</span>
+                 <span class="tech-tag">YOLO</span>
+                 <span class="tech-tag">ArUCO</span>
+                 <span class="tech-tag">Machine Learning</span>
+               </div>
+                <a href="https://github.com/Raytr0/Crepancy-Test" target="_blank" class="project-link">
+                  <i class="fa fa-github"></i> View Source
+                </a>
+                <a href="/assets/img/Scientific_Paper_poster.png" target="_blank" class="project-link">
+                  <i class="fa fa-file-image-o"></i> Poster
+                </a>
               </div>
-              <a href="https://github.com/Raytr0/QQ_Disaster_Tracker" target="_blank" class="project-link">
-                <i class="fa fa-github"></i> View Source
-              </a>
             </div>
-          </div>
 
-          <div class="project-card">
-            <div class="project-image">
-              <img src="/assets/img/project-quizup-logo-1.png" alt="QQ Disaster Tracker">
+           <div class="project-card">
+             <div class="project-image">
+               <img src="/assets/img/project-quizup-logo-1.png" alt="Web Scraper Project">
+             </div>
+             <div class="project-content">
+               <h3 class="project-title">Web Scraper</h3>
+               <p class="project-desc">Amazon data collection tool</p>
+               <ul class="project-achievements">
+                 <li>Collected product data including names, prices, ratings, brands, and specifications</li>
+                 <li>Created flexible filters for users to search items matching their criteria</li>
+                 <li>Automated data export and formatting to Excel files</li>
+               </ul>
+               <div class="project-tech">
+                 <span class="tech-tag">Python</span>
+                 <span class="tech-tag">Excel</span>
+                 <span class="tech-tag">AWS AI</span>
+               </div>
+               <a href="https://github.com/Raytr0/QQ_Disaster_Tracker" target="_blank" class="project-link">
+                 <i class="fa fa-github"></i> View Source
+               </a>
+             </div>
+           </div>
+
+           <div class="project-card">
+             <div class="project-image">
+               <img src="/assets/img/github.png" alt="Housing Prediction">
+             </div>
+             <div class="project-content">
+               <h3 class="project-title">Housing_Prediction</h3>
+               <p class="project-desc">A housing price prediction project — data analysis, modeling and evaluation.</p>
+               <ul class="project-achievements">
+                 <li>Performed exploratory data analysis and visualization to identify key features</li>
+                 <li>Engineered features and handled missing data to improve model quality</li>
+                 <li>Trained and compared models (e.g., Linear Regression, Random Forest, Gradient Boosting)</li>
+                 <li>Evaluated models using RMSE and cross-validation; produced a production-ready pipeline</li>
+               </ul>
+               <div class="project-tech">
+                 <span class="tech-tag">Python</span>
+                 <span class="tech-tag">pandas</span>
+                 <span class="tech-tag">scikit-learn</span>
+                 <span class="tech-tag">Jupyter</span>
+               </div>
+               <a href="https://github.com/Raytr0/Housing_Prediction" target="_blank" class="project-link">
+                 <i class="fa fa-github"></i> View Source
+               </a>
+             </div>
+           </div>
+
+           <div class="project-card">
+             <div class="project-image">
+               <img src="/assets/img/github.png" alt="Diabetes Model">
+             </div>
+             <div class="project-content">
+               <h3 class="project-title">DiabetesModel</h3>
+               <p class="project-desc">Predicting diabetes outcomes using classification models and model evaluation.</p>
+               <ul class="project-achievements">
+                 <li>Exploratory data analysis and visualization of clinical features</li>
+                 <li>Handled missing data and performed feature engineering</li>
+                 <li>Trained and compared models (Logistic Regression, Random Forest, XGBoost)</li>
+                 <li>Evaluated using ROC AUC, accuracy, precision/recall and cross-validation</li>
+               </ul>
+               <div class="project-tech">
+                 <span class="tech-tag">Python</span>
+                 <span class="tech-tag">pandas</span>
+                 <span class="tech-tag">scikit-learn</span>
+                 <span class="tech-tag">matplotlib</span>
+               </div>
+                <a href="https://github.com/Raytr0/DiabetesModel" target="_blank" class="project-link">
+                  <i class="fa fa-github"></i> View Source
+                </a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <img src="/assets/img/project-quizup-logo-1.png" alt="QQ Disaster Tracker">
             </div>
             <div class="project-content">
               <h3 class="project-title">QQ Disaster Tracker</h3>
@@ -456,12 +539,22 @@
                 <span>React.js</span>
               </span>
               <span class="skill-item">
+                <img src="/assets/img/react.webp" alt="React Native">
+                <span>React Native</span>
+              </span>
+              <span class="skill-item">
                 <img src="/assets/img/Spring_Logo.png" alt="Spring">
                 <span>Spring</span>
               </span>
               <span class="skill-item">
                 <img src="/assets/img/nodejs.png" alt="Node.js">
                 <span>Node.js</span>
+              </span>
+              <span class="skill-item">
+                <span>YOLO</span>
+              </span>
+              <span class="skill-item">
+                <span>ArUCO</span>
               </span>
               <span class="skill-item">
                 <img src="/assets/img/Bootstrap_logo.svg.png" alt="Bootstrap">
@@ -484,6 +577,9 @@
               <span class="skill-item">
                 <img src="/assets/img/docker_1.png" alt="Docker">
                 <span>Docker</span>
+              </span>
+              <span class="skill-item">
+                <span>Kubernetes</span>
               </span>
               <span class="skill-item">
                 <img src="/assets/img/unity-logo-988A22E703-seeklogo.com.png" alt="Unity">
@@ -616,7 +712,109 @@
         navbar.classList.remove('scrolled');
       }
     });
+
+    // Toggle achievements visibility for project cards
+    function toggleAchievements(button) {
+      const achievementsList = button.nextElementSibling;
+      const isExpanded = achievementsList.classList.contains('expanded');
+
+      if (isExpanded) {
+        achievementsList.classList.remove('expanded');
+        achievementsList.classList.add('collapsed');
+        button.innerHTML = '<i class="fa fa-chevron-down"></i> Show More';
+      } else {
+        achievementsList.classList.remove('collapsed');
+        achievementsList.classList.add('expanded');
+        button.innerHTML = '<i class="fa fa-chevron-up"></i> Show Less';
+      }
+    }
   </script>
+
+  <style>
+    .toggle-achievements {
+      background: none;
+      border: none;
+      color: #6366f1;
+      cursor: pointer;
+      font-size: 14px;
+      padding: 8px 0;
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.3s ease;
+      font-weight: 500;
+    }
+
+    .toggle-achievements:hover {
+      color: #818cf8;
+      transform: translateX(2px);
+    }
+
+    .toggle-achievements i {
+      transition: transform 0.3s ease;
+    }
+
+    .toggle-achievements:hover i {
+      transform: translateY(2px);
+    }
+
+    .project-achievements.collapsed {
+      max-height: 0;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+
+    .project-achievements.expanded {
+      max-height: 500px;
+      overflow: visible;
+      margin: 15px 0;
+      padding: 0;
+      opacity: 1;
+      transition: all 0.3s ease;
+    }
+
+    .collapsible-achievements.collapsed {
+      max-height: 0;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+
+    .collapsible-achievements.expanded {
+      max-height: 300px;
+      overflow: visible;
+      margin: 15px 0;
+      padding: 0;
+      opacity: 1;
+      transition: all 0.3s ease;
+    }
+
+    .project-achievements {
+      list-style: none;
+      padding-left: 0;
+      margin: 15px 0;
+    }
+
+    .project-achievements li {
+      margin: 10px 0;
+      padding-left: 20px;
+      position: relative;
+      line-height: 1.6;
+    }
+
+    .project-achievements li:before {
+      content: "▸";
+      position: absolute;
+      left: 0;
+      color: #6366f1;
+    }
+  </style>
 </body>
 
 </html>
